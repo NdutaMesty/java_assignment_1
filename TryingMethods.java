@@ -1,6 +1,4 @@
 package java_assignment_1;
-
-import java.time.DayOfWeek;
 import java.util.Scanner;
 
 public class TryingMethods {
@@ -11,38 +9,37 @@ public class TryingMethods {
      * Two of the method should be dynamic and the other two static
      */
 
+
+
      public static void main(String[] args) {
-    
          Scanner sc = new Scanner(System.in);
          System.out.println("Select a number between 1-7: ");
 
-         int numDay;
-         numDay = sc.nextInt();
+         int numDay = sc.nextInt();
+         TryingMethods c = new TryingMethods();
+         System.out.println(c.dayOfTheWeek(numDay));
+
+     }
+
+     public String dayOfTheWeek(int numDay) {
          switch (numDay) {
              case 1:
-                 System.out.println("The day is: Monday");
-                 break;
+                 return "The day is: Monday";
              case 2:
-                 System.out.println("The day is: Tuesday");
-                 break;
+                 return "The day is: Tuesday";
              case 3:
-                 System.out.println("The day is: Wednesday");
-                 break;
+                 return "The day is: Wednesday";
              case 4:
-                 System.out.println("The day is: Thursday");
-                 break;
+                 return "The day is: Thursday";
              case 5:
-                 System.out.println("The day is: Friday");
-                 break;
+                 return "The day is: Friday";
              case 6:
-                 System.out.println("The day is: Saturday");
-                 break;
+                 return "The day is: Saturday";
              case 7:
-                 System.out.println("The day is: Sunday");
-                 break;
+                 return "The day is: Sunday";
              default:
-                 System.out.println("Not a day in time!");
-                 break;
+                 return "Not a day in time!";
          }
+
      }
 }
