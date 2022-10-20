@@ -18,6 +18,20 @@ public class TryingMethods {
          int numDay = sc.nextInt();
          TryingMethods c = new TryingMethods();
          System.out.println(c.dayOfTheWeek(numDay));
+         System.out.println("");
+         System.out.println("");
+
+         System.out.println("Input plane level between 1 - 100:  ");
+
+         int levelVal = sc.nextInt();
+         c.gradeLevel(levelVal);
+
+         System.out.println("");
+         System.out.println("");
+
+         System.out.println("The sum of numbers less than 1000 is  : " + lessThanThousandSum());
+
+         evenSumBetween();
 
      }
 
@@ -53,5 +67,27 @@ public class TryingMethods {
         else {
             System.out.println("You are over the moon!!");
         }
+     }
+
+     public static int lessThanThousandSum() {
+        int index = 0;
+        int sum = 0;
+
+        while(index < 1000) {
+            sum += index;
+            index += 1;
+        }
+        return sum;
+     }
+
+     public static void evenSumBetween() {
+        int sum = 0;
+        for (int i = 12; i < 103; i++) {
+            if(i % 2 == 0) {
+                sum += i;
+            }
+        }
+
+        System.out.println("The sum of even numbers between 12 and 103 is  : " + sum);
      }
 }
