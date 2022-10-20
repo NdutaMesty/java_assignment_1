@@ -42,4 +42,16 @@ public class TryingMethods {
          }
 
      }
+
+     public void gradeLevel(int level) {
+        if (level < 40) {
+            System.out.println("You are on earth");
+        }
+        else if(level < 70) {
+            System.out.println("You are in the moon!");
+        }
+        else {
+            System.out.println("You are over the moon!!");
+        }
+     }
 }
